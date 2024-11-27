@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -8,6 +13,7 @@ body{
     font-size: 4rem;
     font-family: Arial, sans-serif;
     color: hsl(0, 0%, 25%);
+    margin-bottom: 2rem;
 }
 #container{
     display: flex;
@@ -55,4 +61,28 @@ transition: 0.5s, ease-out;
 }
 #resetBtn:hover{
     background-color: hsl(205, 90%, 50%);
+}
+
+@media (max-width:760px){
+    #myH1{
+        font-size: 2rem;
+    }
+    #container{
+        padding: 20px;
+        border: 5px, solid;
+        border-radius: 30px;
+    }
+    #display{
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+    .controls button{
+        font-size: 1rem;
+        font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 3px;
+    min-width: 80px;
+    
+    }
 }
